@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "loop": "backend-dev",
-  "status": "running",
-  "mode": "fresh",
+  "status": "completed",
+  "mode": "resume",
   "requirements_inputs": [
     {
       "path": "docs/Task_PRD.md",
@@ -29,7 +29,8 @@
       "total": 589920
     },
     "tokens_used": 336576,
-    "tokens_method": "measured"
+    "tokens_method": "measured",
+    "tokens_new_work": 61836
   },
   "current_phase": null,
   "current_attempt": 0,
@@ -79,7 +80,8 @@
       },
       "tokens_used": 2477455,
       "tokens_method": "measured",
-      "last_error": null
+      "last_error": null,
+      "tokens_new_work": 54964
     },
     {
       "id": "phase-02-tasks",
@@ -87,8 +89,8 @@
       "depends_on": [
         "phase-01-scaffold"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-02-tasks.md",
       "requirements_covered": [
         "US-Tasks-1..7",
@@ -101,13 +103,49 @@
         "BR-5",
         "BR-14"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T12:43:16.8607437+03:00",
+      "ended_at": "2026-09-24T12:52:04.1412652+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 41,
+        "input": 82,
+        "cache_creation": 116075,
+        "cache_read": 4339511,
+        "output": 69346,
+        "total": 4525014,
+        "measured_at": "2026-09-24T12:43:16.8607437+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 63,
+        "input": 126,
+        "cache_creation": 155725,
+        "cache_read": 8158267,
+        "output": 98156,
+        "total": 8412274,
+        "measured_at": "2026-09-24T12:52:04.1412652+03:00"
+      },
+      "tokens_used": 3887260,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T12:43:16.8607437+03:00",
+          "end": "2026-09-24T12:52:04.1412652+03:00",
+          "tokens_total": 3887260,
+          "tokens_new_work": 68504,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 68504
     },
     {
       "id": "phase-03-habits",
@@ -115,8 +153,8 @@
       "depends_on": [
         "phase-01-scaffold"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-03-habits.md",
       "requirements_covered": [
         "US-Habits-1..5",
@@ -126,13 +164,49 @@
         "BR-7",
         "BR-14"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T12:52:26.8801818+03:00",
+      "ended_at": "2026-09-24T12:55:50.0347580+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 65,
+        "input": 130,
+        "cache_creation": 159552,
+        "cache_read": 8533806,
+        "output": 99711,
+        "total": 8793199,
+        "measured_at": "2026-09-24T12:52:26.8801818+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 73,
+        "input": 146,
+        "cache_creation": 180351,
+        "cache_read": 10159158,
+        "output": 118406,
+        "total": 10458061,
+        "measured_at": "2026-09-24T12:55:50.0347580+03:00"
+      },
+      "tokens_used": 1664862,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T12:52:26.8801818+03:00",
+          "end": "2026-09-24T12:55:50.0347580+03:00",
+          "tokens_total": 1664862,
+          "tokens_new_work": 39510,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 39510
     },
     {
       "id": "phase-04-learning",
@@ -140,8 +214,8 @@
       "depends_on": [
         "phase-01-scaffold"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-04-learning.md",
       "requirements_covered": [
         "US-Learning-1..5",
@@ -151,13 +225,49 @@
         "BR-9",
         "BR-14"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T12:56:04.5452011+03:00",
+      "ended_at": "2026-09-24T12:59:10.2852967+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 74,
+        "input": 148,
+        "cache_creation": 182927,
+        "cache_read": 10370277,
+        "output": 119325,
+        "total": 10672677,
+        "measured_at": "2026-09-24T12:56:04.5452011+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 81,
+        "input": 162,
+        "cache_creation": 202140,
+        "cache_read": 11946836,
+        "output": 136127,
+        "total": 12285265,
+        "measured_at": "2026-09-24T12:59:10.2852967+03:00"
+      },
+      "tokens_used": 1612588,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T12:56:04.5452011+03:00",
+          "end": "2026-09-24T12:59:10.2852967+03:00",
+          "tokens_total": 1612588,
+          "tokens_new_work": 36029,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 36029
     },
     {
       "id": "phase-05-plans",
@@ -167,8 +277,8 @@
         "phase-03-habits",
         "phase-04-learning"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-05-plans.md",
       "requirements_covered": [
         "US-Plans-1..10",
@@ -180,13 +290,49 @@
         "BR-13",
         "BR-14"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T12:59:43.7193239+03:00",
+      "ended_at": "2026-09-24T13:05:24.7383161+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 82,
+        "input": 164,
+        "cache_creation": 203859,
+        "cache_read": 12179744,
+        "output": 139163,
+        "total": 12522930,
+        "measured_at": "2026-09-24T12:59:43.7193239+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 94,
+        "input": 188,
+        "cache_creation": 246776,
+        "cache_read": 15312496,
+        "output": 174254,
+        "total": 15733714,
+        "measured_at": "2026-09-24T13:05:24.7383161+03:00"
+      },
+      "tokens_used": 3210784,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T12:59:43.7193239+03:00",
+          "end": "2026-09-24T13:05:24.7383161+03:00",
+          "tokens_total": 3210784,
+          "tokens_new_work": 78032,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 78032
     },
     {
       "id": "phase-06-settings",
@@ -194,20 +340,56 @@
       "depends_on": [
         "phase-01-scaffold"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-06-settings.md",
       "requirements_covered": [
         "§4-Settings",
         "§8-Settings"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T13:05:36.7726022+03:00",
+      "ended_at": "2026-09-24T13:08:19.6746562+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 95,
+        "input": 190,
+        "cache_creation": 247604,
+        "cache_read": 15590040,
+        "output": 174911,
+        "total": 16012745,
+        "measured_at": "2026-09-24T13:05:36.7726022+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 105,
+        "input": 210,
+        "cache_creation": 261340,
+        "cache_read": 18455290,
+        "output": 185541,
+        "total": 18902381,
+        "measured_at": "2026-09-24T13:08:19.6746562+03:00"
+      },
+      "tokens_used": 2889636,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T13:05:36.7726022+03:00",
+          "end": "2026-09-24T13:08:19.6746562+03:00",
+          "tokens_total": 2889636,
+          "tokens_new_work": 24386,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 24386
     },
     {
       "id": "phase-07-dashboard",
@@ -218,27 +400,63 @@
         "phase-04-learning",
         "phase-05-plans"
       ],
-      "status": "pending",
-      "attempts": 0,
+      "status": "completed",
+      "attempts": 1,
       "output_file": "outputs/phase-07-dashboard.md",
       "requirements_covered": [
         "US-Dashboard-1..6",
         "FR-09",
         "FR-08"
       ],
-      "started_at": null,
-      "ended_at": null,
-      "token_snapshot_start": null,
-      "token_snapshot_end": null,
-      "tokens_used": null,
-      "tokens_method": null,
-      "last_error": null
+      "started_at": "2026-09-24T13:08:38.3321247+03:00",
+      "ended_at": "2026-09-24T13:11:51.6751874+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 106,
+        "input": 212,
+        "cache_creation": 262867,
+        "cache_read": 18747398,
+        "output": 187012,
+        "total": 19197489,
+        "measured_at": "2026-09-24T13:08:38.3321247+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 115,
+        "input": 230,
+        "cache_creation": 281860,
+        "cache_read": 21492543,
+        "output": 202239,
+        "total": 21976872,
+        "measured_at": "2026-09-24T13:11:51.6751874+03:00"
+      },
+      "tokens_used": 2779383,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "n": 1,
+          "start": "2026-09-24T13:08:38.3321247+03:00",
+          "end": "2026-09-24T13:11:51.6751874+03:00",
+          "tokens_total": 2779383,
+          "tokens_new_work": 34238,
+          "result": "pass",
+          "error": null
+        }
+      ],
+      "tokens_new_work": 34238
     }
   ],
   "artifacts": {
     "swagger_file": "docs/api/swagger.json",
-    "swagger_endpoint_count": 1
+    "swagger_endpoint_count": 41
   },
   "last_error": null,
-  "updated_at": "2026-09-24T09:36:41.125Z"
+  "updated_at": "2026-09-24T10:12:04.812Z"
 }

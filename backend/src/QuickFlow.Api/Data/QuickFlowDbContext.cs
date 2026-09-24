@@ -1,11 +1,26 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using QuickFlow.Domain.Habits;
+using QuickFlow.Domain.Learning;
+using QuickFlow.Domain.Plans;
+using QuickFlow.Domain.Settings;
+using QuickFlow.Domain.Tasks;
 
 namespace QuickFlow.Api.Data;
 
 public class QuickFlowDbContext : DbContext
 {
     public QuickFlowDbContext(DbContextOptions<QuickFlowDbContext> options) : base(options) { }
+
+    public DbSet<TaskItem> Tasks => Set<TaskItem>();
+    public DbSet<Habit> Habits => Set<Habit>();
+    public DbSet<HabitCompletion> HabitCompletions => Set<HabitCompletion>();
+    public DbSet<LearningCard> LearningCards => Set<LearningCard>();
+    public DbSet<LearningMilestone> LearningMilestones => Set<LearningMilestone>();
+    public DbSet<LearningNote> LearningNotes => Set<LearningNote>();
+    public DbSet<Plan> Plans => Set<Plan>();
+    public DbSet<PlanItem> PlanItems => Set<PlanItem>();
+    public DbSet<UserSettings> UserSettings => Set<UserSettings>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

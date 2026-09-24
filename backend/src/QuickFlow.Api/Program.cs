@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using QuickFlow.Api.Data;
 using QuickFlow.Api.Infrastructure;
+using QuickFlow.Api.Services;
 using QuickFlow.Domain.Common;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,11 @@ var dbPath = Path.IsPathRooted(dbFile) ? dbFile : Path.Combine(builder.Environme
 builder.Services.AddDbContext<QuickFlowDbContext>(o => o.UseSqlite($"Data Source={dbPath}"));
 
 builder.Services.AddSingleton<IClock, SystemClock>();
+builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<HabitService>();
+builder.Services.AddScoped<LearningService>();
+builder.Services.AddScoped<PlanService>();
+builder.Services.AddScoped<DashboardService>();
 
 builder.Services
     .AddControllers()

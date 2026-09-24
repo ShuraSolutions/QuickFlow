@@ -173,7 +173,8 @@ record the curl evidence, halt, and suggest a `/backend-loop` story. Do not use 
   attempt tried, screenshots, suggested next step). Step 7, then **Stop**.
 
 ### Step 7 — RECORD (after every phase, success or failure)
-1. Token snapshot → `token_snapshot_end`; `tokens_used = end.total - start.total`
+1. Token snapshot → `token_snapshot_end`; `tokens_used = end.total - start.total` and `tokens_new_work = Δinput + Δcache_creation + Δoutput`
+   (log both in progress.md, see the progress-entry template)
    (`tokens_method: "estimated"` if the command fails).
 2. Finalize the milestone block in progress.md (end, duration, tokens with
    breakdown, status, attempts, action items done, verification summary with
@@ -262,6 +263,7 @@ Never invent observations: every row reflects an actual MCP tool call and its re
       "token_snapshot_start": null,
       "token_snapshot_end": null,
       "tokens_used": null,
+      "tokens_new_work": null,
       "tokens_method": "measured | estimated | null",
       "last_error": null
     }

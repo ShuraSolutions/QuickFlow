@@ -148,7 +148,8 @@ phase file under `## Verification → ### Attempt N` (format below).
   Go to Step 7, then **Stop**. Do not start later phases.
 
 ### Step 7 — RECORD (after every phase, success or failure)
-1. Token snapshot → `token_snapshot_end`; `tokens_used = end.total - start.total`.
+1. Token snapshot → `token_snapshot_end`; `tokens_used = end.total - start.total` and `tokens_new_work = Δinput + Δcache_creation + Δoutput`
+   (log both in progress.md, see the progress-entry template).
    If the command returns `ok: false`, estimate and set `tokens_method: "estimated"`.
 2. Finalize the milestone block in progress.md: end time, duration, tokens
    (with breakdown), status, attempts, action items done (the `[x]` tasks),
@@ -233,6 +234,7 @@ invent or paraphrase output: paste what the command printed.
       "token_snapshot_start": null,
       "token_snapshot_end": null,
       "tokens_used": null,
+      "tokens_new_work": null,
       "tokens_method": "measured | estimated | null",
       "last_error": null
     }
