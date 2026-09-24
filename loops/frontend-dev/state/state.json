@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "loop": "frontend-dev",
+  "status": "idle",
+  "mode": null,
+  "requirements_inputs": [],
+  "swagger_input": null,
+  "backend_gaps": [],
+  "current_phase": null,
+  "current_attempt": 0,
+  "max_attempts": 3,
+  "phases": [],
+  "artifacts": {
+    "frontend_url": null,
+    "entry_page": null
+  },
+  "backend_started_by_loop": false,
+  "last_error": null,
+  "updated_at": null
+}

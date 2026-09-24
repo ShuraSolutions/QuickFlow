@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "loop": "backend-dev",
+  "status": "idle",
+  "mode": null,
+  "requirements_inputs": [],
+  "current_phase": null,
+  "current_attempt": 0,
+  "max_attempts": 3,
+  "phases": [],
+  "artifacts": {
+    "swagger_file": null,
+    "swagger_endpoint_count": null
+  },
+  "last_error": null,
+  "updated_at": null
+}

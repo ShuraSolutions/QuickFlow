@@ -1,0 +1,15 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+
+# SQLite databases created at runtime
+*.db
+*.db-shm
+*.db-wal
+
+# Node / tooling
+node_modules/
+.playwright-mcp/
