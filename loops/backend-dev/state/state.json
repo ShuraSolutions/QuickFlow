@@ -1,17 +1,244 @@
 {
   "schema_version": 1,
   "loop": "backend-dev",
-  "status": "idle",
-  "mode": null,
-  "requirements_inputs": [],
+  "status": "running",
+  "mode": "fresh",
+  "requirements_inputs": [
+    {
+      "path": "docs/Task_PRD.md",
+      "sha256": "D2C19A6896611D2BDE867FACB2EB43546A07DAA58AE8D6C42699F4F34B41C10B",
+      "kind": "full",
+      "added_at": "2026-09-24T12:26:53+03:00"
+    }
+  ],
+  "planning": {
+    "started_at": "2026-09-24T12:26:59.7547584+03:00",
+    "ended_at": "2026-09-24T12:30:58.7222110+03:00",
+    "token_snapshot_start": {
+      "input": 10,
+      "cache_creation": 30875,
+      "cache_read": 221430,
+      "output": 1029,
+      "total": 253344
+    },
+    "token_snapshot_end": {
+      "input": 18,
+      "cache_creation": 62241,
+      "cache_read": 496170,
+      "output": 31491,
+      "total": 589920
+    },
+    "tokens_used": 336576,
+    "tokens_method": "measured"
+  },
   "current_phase": null,
   "current_attempt": 0,
   "max_attempts": 3,
-  "phases": [],
+  "phases": [
+    {
+      "id": "phase-01-scaffold",
+      "title": "Scaffold & infrastructure",
+      "depends_on": [],
+      "status": "completed",
+      "attempts": 1,
+      "output_file": "outputs/phase-01-scaffold.md",
+      "requirements_covered": [
+        "NFR-Reliability",
+        "NFR-Maintainability",
+        "config:cors",
+        "config:swagger",
+        "config:health"
+      ],
+      "started_at": "2026-09-24T12:31:37.6142256+03:00",
+      "ended_at": "2026-09-24T12:36:25.8122014+03:00",
+      "token_snapshot_start": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 11,
+        "input": 22,
+        "cache_creation": 66567,
+        "cache_read": 682687,
+        "output": 36027,
+        "total": 785303,
+        "measured_at": "2026-09-24T12:31:37.6142256+03:00"
+      },
+      "token_snapshot_end": {
+        "ok": true,
+        "method": "measured",
+        "session_id": "420f0aff-a628-4393-b42c-16d82885ecc9",
+        "transcripts": 1,
+        "messages": 32,
+        "input": 64,
+        "cache_creation": 100566,
+        "cache_read": 3105178,
+        "output": 56950,
+        "total": 3262758,
+        "measured_at": "2026-09-24T12:36:25.8122014+03:00"
+      },
+      "tokens_used": 2477455,
+      "tokens_method": "measured",
+      "last_error": null
+    },
+    {
+      "id": "phase-02-tasks",
+      "title": "Tasks resource",
+      "depends_on": [
+        "phase-01-scaffold"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-02-tasks.md",
+      "requirements_covered": [
+        "US-Tasks-1..7",
+        "FR-01",
+        "FR-02",
+        "BR-1",
+        "BR-2",
+        "BR-3",
+        "BR-4",
+        "BR-5",
+        "BR-14"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    },
+    {
+      "id": "phase-03-habits",
+      "title": "Habits & habit completions",
+      "depends_on": [
+        "phase-01-scaffold"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-03-habits.md",
+      "requirements_covered": [
+        "US-Habits-1..5",
+        "FR-03",
+        "FR-04",
+        "BR-6",
+        "BR-7",
+        "BR-14"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    },
+    {
+      "id": "phase-04-learning",
+      "title": "Learning cards, milestones & notes",
+      "depends_on": [
+        "phase-01-scaffold"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-04-learning.md",
+      "requirements_covered": [
+        "US-Learning-1..5",
+        "FR-05",
+        "FR-06",
+        "BR-8",
+        "BR-9",
+        "BR-14"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    },
+    {
+      "id": "phase-05-plans",
+      "title": "Todo plans, items, progress & rest time",
+      "depends_on": [
+        "phase-02-tasks",
+        "phase-03-habits",
+        "phase-04-learning"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-05-plans.md",
+      "requirements_covered": [
+        "US-Plans-1..10",
+        "FR-07",
+        "FR-08",
+        "BR-10",
+        "BR-11",
+        "BR-12",
+        "BR-13",
+        "BR-14"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    },
+    {
+      "id": "phase-06-settings",
+      "title": "Settings",
+      "depends_on": [
+        "phase-01-scaffold"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-06-settings.md",
+      "requirements_covered": [
+        "§4-Settings",
+        "§8-Settings"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    },
+    {
+      "id": "phase-07-dashboard",
+      "title": "Dashboard summary",
+      "depends_on": [
+        "phase-02-tasks",
+        "phase-03-habits",
+        "phase-04-learning",
+        "phase-05-plans"
+      ],
+      "status": "pending",
+      "attempts": 0,
+      "output_file": "outputs/phase-07-dashboard.md",
+      "requirements_covered": [
+        "US-Dashboard-1..6",
+        "FR-09",
+        "FR-08"
+      ],
+      "started_at": null,
+      "ended_at": null,
+      "token_snapshot_start": null,
+      "token_snapshot_end": null,
+      "tokens_used": null,
+      "tokens_method": null,
+      "last_error": null
+    }
+  ],
   "artifacts": {
-    "swagger_file": null,
-    "swagger_endpoint_count": null
+    "swagger_file": "docs/api/swagger.json",
+    "swagger_endpoint_count": 1
   },
   "last_error": null,
-  "updated_at": null
+  "updated_at": "2026-09-24T09:36:41.125Z"
 }
