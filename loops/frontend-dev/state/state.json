@@ -1,20 +1,478 @@
 {
   "schema_version": 1,
   "loop": "frontend-dev",
-  "status": "idle",
-  "mode": null,
-  "requirements_inputs": [],
-  "swagger_input": null,
+  "status": "completed",
+  "mode": "fresh",
+  "requirements_inputs": [
+    {
+      "path": "docs/Task_PRD.md",
+      "sha256": "D2C19A6896611D2BDE867FACB2EB43546A07DAA58AE8D6C42699F4F34B41C10B",
+      "kind": "full",
+      "added_at": "2026-09-24T17:48:47+03:00"
+    }
+  ],
+  "swagger_input": {
+    "path": "docs/api/swagger.json",
+    "sha256": "F3DEC8C6F3EA64CB2A2A7DF0F28D4FB2C1A36B50850EB25B1EC09E1DA5A76BE0",
+    "operation_count": 41
+  },
   "backend_gaps": [],
+  "planning": {
+    "started_at": "2026-09-24T17:48:47.8031568+03:00",
+    "ended_at": "2026-09-24T17:51:18.3606793+03:00",
+    "token_snapshot_start": {
+      "input": 22,
+      "cache_creation": 57056,
+      "cache_read": 671864,
+      "output": 4405,
+      "total": 733347
+    },
+    "token_snapshot_end": {
+      "input": 28,
+      "cache_creation": 74456,
+      "cache_read": 933416,
+      "output": 19715,
+      "total": 1027615
+    },
+    "tokens_used": 294268,
+    "tokens_new_work": 32716,
+    "tokens_method": "measured"
+  },
   "current_phase": null,
   "current_attempt": 0,
   "max_attempts": 3,
-  "phases": [],
+  "phases": [
+    {
+      "id": "phase-01-app-shell",
+      "title": "App shell, navigation & API client",
+      "depends_on": [],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 1,
+      "output_file": "outputs/phase-01-app-shell.md",
+      "requirements_covered": [
+        "§4",
+        "§8 Main Navigation",
+        "§13 DoD"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-01-C1-landing.png",
+        "outputs/screenshots/phase-01-C2-nav-settings.png",
+        "outputs/screenshots/phase-01-C3-unknown-route.png",
+        "outputs/screenshots/phase-01-C4-api-status.png",
+        "outputs/screenshots/phase-01-C5-back.png",
+        "outputs/screenshots/phase-01-C6-no-console-errors.png"
+      ],
+      "started_at": "2026-09-24T17:51:58.3063791+03:00",
+      "ended_at": "2026-09-24T17:57:39.8897050+03:00",
+      "token_snapshot_start": {
+        "input": 34,
+        "cache_creation": 78233,
+        "cache_read": 1244312,
+        "output": 23366,
+        "total": 1345945
+      },
+      "token_snapshot_end": {
+        "input": 86,
+        "cache_creation": 116515,
+        "cache_read": 4680743,
+        "output": 51666,
+        "total": 4849010
+      },
+      "tokens_used": 3503065,
+      "tokens_new_work": 66634,
+      "tokens_method": "measured",
+      "last_error": null
+    },
+    {
+      "id": "phase-02-tasks",
+      "title": "Tasks page",
+      "depends_on": [
+        "phase-01-app-shell"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 1,
+      "output_file": "outputs/phase-02-tasks.md",
+      "requirements_covered": [
+        "US Tasks 1-7",
+        "FR-01",
+        "FR-02",
+        "BR-1..5",
+        "§8 Tasks Page",
+        "§12 AC Tasks"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-02-C1-empty-state.png",
+        "outputs/screenshots/phase-02-C2-task-created.png",
+        "outputs/screenshots/phase-02-C3-validation.png",
+        "outputs/screenshots/phase-02-C4-task-edited.png",
+        "outputs/screenshots/phase-02-C5-task-completed.png",
+        "outputs/screenshots/phase-02-C6-priority-filter.png",
+        "outputs/screenshots/phase-02-C6-search.png",
+        "outputs/screenshots/phase-02-C7-overdue-filter.png",
+        "outputs/screenshots/phase-02-C7-sort-due-asc.png",
+        "outputs/screenshots/phase-02-C8-archived-hidden.png",
+        "outputs/screenshots/phase-02-C8-archived-view.png",
+        "outputs/screenshots/phase-02-C8-restored.png",
+        "outputs/screenshots/phase-02-C9-delete-confirm.png",
+        "outputs/screenshots/phase-02-C9-deleted.png",
+        "outputs/screenshots/phase-02-C9b-quick-add-route.png",
+        "outputs/screenshots/phase-02-smoke-phase-01.png"
+      ],
+      "started_at": "2026-09-24T17:59:34.3961385+03:00",
+      "ended_at": "2026-09-24T18:08:28.0518699+03:00",
+      "token_snapshot_start": {
+        "input": 102,
+        "cache_creation": 135422,
+        "cache_read": 5922285,
+        "output": 61930,
+        "total": 6119739
+      },
+      "token_snapshot_end": {
+        "input": 216,
+        "cache_creation": 188453,
+        "cache_read": 16765019,
+        "output": 86486,
+        "total": 17040174
+      },
+      "tokens_used": 10920435,
+      "tokens_new_work": 77701,
+      "tokens_method": "measured",
+      "last_error": null
+    },
+    {
+      "id": "phase-03-habits",
+      "title": "Habits page",
+      "depends_on": [
+        "phase-01-app-shell"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 1,
+      "output_file": "outputs/phase-03-habits.md",
+      "requirements_covered": [
+        "US Habits 1-5",
+        "FR-03",
+        "FR-04",
+        "BR-6",
+        "BR-7",
+        "§8 Habits Page",
+        "§12 AC Habits"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-03-C1-empty-state.png",
+        "outputs/screenshots/phase-03-C2-habits-created.png",
+        "outputs/screenshots/phase-03-C3-validation.png",
+        "outputs/screenshots/phase-03-C4-after-reload.png",
+        "outputs/screenshots/phase-03-C4-completed-today.png",
+        "outputs/screenshots/phase-03-C5-undo.png",
+        "outputs/screenshots/phase-03-C6-edited.png",
+        "outputs/screenshots/phase-03-C7-inactive.png",
+        "outputs/screenshots/phase-03-C7-reactivated.png",
+        "outputs/screenshots/phase-03-C8-remove-confirm.png",
+        "outputs/screenshots/phase-03-C8-removed.png"
+      ],
+      "started_at": "2026-09-24T18:09:53.3643028+03:00",
+      "ended_at": "2026-09-24T18:12:28.2862901+03:00",
+      "token_snapshot_start": {
+        "input": 222,
+        "cache_creation": 202215,
+        "cache_read": 17424432,
+        "output": 95588,
+        "total": 17722457
+      },
+      "token_snapshot_end": {
+        "input": 244,
+        "cache_creation": 224852,
+        "cache_read": 20065434,
+        "output": 107852,
+        "total": 20398382
+      },
+      "tokens_used": 2675925,
+      "tokens_new_work": 34923,
+      "tokens_method": "measured",
+      "last_error": null
+    },
+    {
+      "id": "phase-04-learning",
+      "title": "Learning Resources page",
+      "depends_on": [
+        "phase-01-app-shell"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 1,
+      "output_file": "outputs/phase-04-learning.md",
+      "requirements_covered": [
+        "US Learning 1-5",
+        "FR-05",
+        "FR-06",
+        "BR-8",
+        "BR-9",
+        "§8 Learning Resources Page",
+        "§12 AC Learning"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-04-C1-empty-state.png",
+        "outputs/screenshots/phase-04-C2-card-added.png",
+        "outputs/screenshots/phase-04-C3-validation.png",
+        "outputs/screenshots/phase-04-C4-milestones-added.png",
+        "outputs/screenshots/phase-04-C5-milestone-done.png",
+        "outputs/screenshots/phase-04-C6-milestone-removed.png",
+        "outputs/screenshots/phase-04-C7-note-added.png",
+        "outputs/screenshots/phase-04-C7-note-removed.png",
+        "outputs/screenshots/phase-04-C8-status-edited.png",
+        "outputs/screenshots/phase-04-C9-remove-confirm.png",
+        "outputs/screenshots/phase-04-C9-removed.png",
+        "outputs/screenshots/phase-04-smoke-regression.png"
+      ],
+      "started_at": "2026-09-24T18:13:34.7458531+03:00",
+      "ended_at": "2026-09-24T18:16:21.3916063+03:00",
+      "token_snapshot_start": {
+        "input": 248,
+        "cache_creation": 236015,
+        "cache_read": 20573116,
+        "output": 115079,
+        "total": 20924458
+      },
+      "token_snapshot_end": {
+        "input": 266,
+        "cache_creation": 260546,
+        "cache_read": 23049423,
+        "output": 128221,
+        "total": 23438456
+      },
+      "tokens_used": 2513998,
+      "tokens_new_work": 37691,
+      "tokens_method": "measured",
+      "last_error": null
+    },
+    {
+      "id": "phase-05-todo-plans",
+      "title": "Todo Plans page",
+      "depends_on": [
+        "phase-02-tasks",
+        "phase-03-habits",
+        "phase-04-learning"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 2,
+      "output_file": "outputs/phase-05-todo-plans.md",
+      "requirements_covered": [
+        "US Todo Plans 1-10",
+        "FR-07",
+        "FR-08",
+        "BR-10..13",
+        "§8 Todo Plans Page",
+        "§12 AC Todo Plans",
+        "NFR Performance",
+        "NFR Reliability"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-05-C1-empty-state.png",
+        "outputs/screenshots/phase-05-C10-unit-tests.png",
+        "outputs/screenshots/phase-05-C2-validation.png",
+        "outputs/screenshots/phase-05-C3-builder-filled.png",
+        "outputs/screenshots/phase-05-C3-plan-created.png",
+        "outputs/screenshots/phase-05-C4-rest-time-second-reading.png",
+        "outputs/screenshots/phase-05-C5-item-done.png",
+        "outputs/screenshots/phase-05-C5-task-done-on-tasks-page.png",
+        "outputs/screenshots/phase-05-C6-started-notification.png",
+        "outputs/screenshots/phase-05-C6-upcoming-starts-in.png",
+        "outputs/screenshots/phase-05-C7-acknowledged-no-toast.png",
+        "outputs/screenshots/phase-05-C8-history.png",
+        "outputs/screenshots/phase-05-C9-removed.png",
+        "outputs/screenshots/phase-05-C9-reordered.png"
+      ],
+      "started_at": "2026-09-24T18:17:53.4971838+03:00",
+      "ended_at": "2026-09-24T18:31:23.1968552+03:00",
+      "token_snapshot_start": {
+        "input": 270,
+        "cache_creation": 272198,
+        "cache_read": 23628865,
+        "output": 137202,
+        "total": 24038535
+      },
+      "token_snapshot_end": {
+        "input": 346,
+        "cache_creation": 363754,
+        "cache_read": 36838793,
+        "output": 189727,
+        "total": 37392620
+      },
+      "tokens_used": 13354085,
+      "tokens_new_work": 144157,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-24T18:17:53.4971838+03:00",
+          "ended_at": "2026-09-24T18:24:28.5345402+03:00",
+          "result": "fail",
+          "error": "favicon.ico 404 console error on tests page",
+          "token_snapshot_end": {
+            "input": 312,
+            "cache_creation": 318841,
+            "cache_read": 30523886,
+            "output": 166369,
+            "total": 31009408
+          }
+        },
+        {
+          "attempt": 2,
+          "started_at": "2026-09-24T18:24:28.5345402+03:00",
+          "ended_at": "2026-09-24T18:31:23.1968552+03:00",
+          "result": "pass",
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase-06-dashboard",
+      "title": "Dashboard",
+      "depends_on": [
+        "phase-05-todo-plans"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 2,
+      "output_file": "outputs/phase-06-dashboard.md",
+      "requirements_covered": [
+        "US Dashboard 1-6",
+        "FR-09",
+        "§11 E2E",
+        "§12 AC Dashboard"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-06-attempt1-toast-blocks-modal.png",
+        "outputs/screenshots/phase-06-C1-dashboard.png",
+        "outputs/screenshots/phase-06-C3-task-completed-from-dashboard.png",
+        "outputs/screenshots/phase-06-C4-habit-checked.png",
+        "outputs/screenshots/phase-06-C5-active-plan-live.png",
+        "outputs/screenshots/phase-06-C6-learning-snapshot.png",
+        "outputs/screenshots/phase-06-C7-quick-add-plan.png",
+        "outputs/screenshots/phase-06-C7-quick-add-task.png",
+        "outputs/screenshots/phase-06-C8-e2e-dashboard-after.png",
+        "outputs/screenshots/phase-06-C8-e2e-dashboard-plan-active.png",
+        "outputs/screenshots/phase-06-C8-e2e-plan-completed.png",
+        "outputs/screenshots/phase-06-smoke-regression.png"
+      ],
+      "started_at": "2026-09-24T18:33:03.1496014+03:00",
+      "ended_at": "2026-09-24T18:40:51.9201684+03:00",
+      "token_snapshot_start": {
+        "input": 354,
+        "cache_creation": 374092,
+        "cache_read": 38425627,
+        "output": 199228,
+        "total": 38999301
+      },
+      "token_snapshot_end": {
+        "input": 388,
+        "cache_creation": 444499,
+        "cache_read": 45763720,
+        "output": 231588,
+        "total": 46440195
+      },
+      "tokens_used": 7440894,
+      "tokens_new_work": 102801,
+      "tokens_method": "measured",
+      "last_error": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-24T18:33:03.1496014+03:00",
+          "ended_at": "2026-09-24T18:37:35.2005922+03:00",
+          "result": "fail",
+          "error": "toast overlays modal footer (smoke phase-05 failed); completed plan notified",
+          "token_snapshot_end": {
+            "input": 374,
+            "cache_creation": 412200,
+            "cache_read": 42606774,
+            "output": 218353,
+            "total": 43237701
+          }
+        },
+        {
+          "attempt": 2,
+          "started_at": "2026-09-24T18:37:35.2005922+03:00",
+          "ended_at": "2026-09-24T18:40:51.9201684+03:00",
+          "result": "pass",
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "phase-07-settings",
+      "title": "Settings page",
+      "depends_on": [
+        "phase-06-dashboard"
+      ],
+      "blocked_by": [],
+      "status": "completed",
+      "failure_kind": null,
+      "attempts": 1,
+      "output_file": "outputs/phase-07-settings.md",
+      "requirements_covered": [
+        "§4 Settings",
+        "§8 Settings Page",
+        "FR-08 notification preference"
+      ],
+      "screenshots": [
+        "outputs/screenshots/phase-07-C1-settings-loaded.png",
+        "outputs/screenshots/phase-07-C2-validation.png",
+        "outputs/screenshots/phase-07-C3-dashboard-greeting.png",
+        "outputs/screenshots/phase-07-C3-saved.png",
+        "outputs/screenshots/phase-07-C4-dark-dashboard.png",
+        "outputs/screenshots/phase-07-C4-dark-theme.png",
+        "outputs/screenshots/phase-07-C5-default-view-tasks.png",
+        "outputs/screenshots/phase-07-C6-C7-notifications-on.png",
+        "outputs/screenshots/phase-07-C6-notifications-off.png",
+        "outputs/screenshots/phase-07-smoke-regression.png"
+      ],
+      "started_at": "2026-09-24T18:42:11.5505527+03:00",
+      "ended_at": "2026-09-24T18:45:31.7591632+03:00",
+      "token_snapshot_start": {
+        "input": 392,
+        "cache_creation": 452666,
+        "cache_read": 46711310,
+        "output": 239509,
+        "total": 47403877
+      },
+      "token_snapshot_end": {
+        "input": 408,
+        "cache_creation": 482372,
+        "cache_read": 50647096,
+        "output": 253222,
+        "total": 51383098
+      },
+      "tokens_used": 3979221,
+      "tokens_new_work": 43435,
+      "tokens_method": "measured",
+      "last_error": null
+    }
+  ],
   "artifacts": {
-    "frontend_url": null,
-    "entry_page": null
+    "frontend_url": "http://localhost:5500",
+    "entry_page": "frontend/index.html",
+    "serve_command": "npx --yes http-server frontend -p 5500 -c-1 --silent",
+    "smoke_scripts": "loops/frontend-dev/outputs/smoke/",
+    "unit_tests": "frontend/tests/plan-time.test.html"
   },
   "backend_started_by_loop": false,
   "last_error": null,
-  "updated_at": null
+  "updated_at": "2026-09-24T15:46:54.161Z",
+  "finished_at": "2026-09-24T18:46:53.9912089+03:00",
+  "totals": {
+    "tokens_used": 44681891,
+    "tokens_new_work": 540058
+  }
 }
